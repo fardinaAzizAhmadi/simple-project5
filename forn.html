@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+div{
+  width: 450px;
+  height: 550px;
+  box-shadow: 0px 1px 1px 1px;
+  margin-left: 400px;
+  margin-top: 50px;
+  background-color: aliceblue ;
+}
+h1{
+  text-align: center;
+position: relative;
+top: 20px;
+}
+#name{
+  margin-left: 20px;
+}
+#ee{
+  margin-left: 20px;
+  width: 91%;
+  padding: 10px;
+  background-color: rgb(148, 170, 211);
+  color: black;
+  border: none;
+}
+#dd{
+  margin-left: 20px;
+  width: 91%;
+  padding: 10px;
+  background-color: rgb(148, 170, 211);
+  color: black;
+  border: none;
+}
+#email{
+  margin-left: 20px;
+}
+#message{
+  margin-left: 20px;
+}
+#ll{
+  margin-left: 20px;
+  width: 94%;
+}
+#submit{
+  margin-left: 20px;
+  width: 90%;
+  padding: 10px;
+  background-color: green;
+  color: black;
+  border: none;
+}
+#ll{
+  margin-left: 20px;
+}
+
+  </style>
+</head>
+<body>
+  
+  <h2 id="kl"></h2>
+<div>
+<h1> User information</h1>
+
+<form action="">
+<label for=""  id="name">Name :</label><br>
+<input type="name" placeholder="Enter Your Name" id="ee"><br><br>
+
+<label for="" id="email"> Email :</label><br>
+<input type=" Email" placeholder="Enter Your Email" id="dd"><br><br>
+
+<label for=""  id="message"> Message :</label>
+<textarea name=""  cols="50" rows="4" id="ll"></textarea><br><br>
+<input type="submit" name="" id="submit" placeholder="submit"  onclick="myfunction()">
+
+</form>
+</div>
+
+<script>
+function myfunction(){
+
+  let user=document.getElementById('name').value;
+  let user1=document.getElementById('email').value;
+let user2=document.getElementById('message').value;
+let user3=document.getElementById('ll').value;
+let user4=document.getElementById('submit').value;
+
+document.getElementById('kl').innerHTML='user information: '+ user + user1 + user2 + user3 + user4;
+
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
